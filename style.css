@@ -51,10 +51,18 @@ nav {
   width: 40%;
   position: absolute;
 }
-
-.nav-closed ul {
+.nav-button{
+  color: #916356;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid  #916356;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.nav-links {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 50%;
   list-style: none;
 }
