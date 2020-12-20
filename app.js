@@ -9,7 +9,15 @@ window.onload = function () {
 const navButton = document.querySelector('.nav-button');
 const navOpen = document.querySelector('.nav-open');
 
+//Shop button animation
+const tlBtn = gsap.to('.nav-button', 3, {
+  color: '#fff',
+  backgroundColor: '#916356',
+  ease: "power2.easeOut",
+  repeat: -1
+})
 
+//Menu animation
 let tl = gsap.timeline({ paused: true, reversed: true });
 
 tl.to('.cover', 1, {
@@ -34,7 +42,7 @@ tl.to('.cover', 1, {
     });
 
 navButton.addEventListener('click', (e) => {
-  if(tl.isActive()){
+  if (tl.isActive()) {
     e.preventDefault();
     e.stopImmediatePropagation();
     return false;
@@ -42,6 +50,6 @@ navButton.addEventListener('click', (e) => {
   toggleTween(tl)
 })
 
-function toggleTween (tween){
+function toggleTween(tween) {
   tween.reversed() ? tween.play() : tween.reverse()
 }

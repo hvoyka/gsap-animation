@@ -55,7 +55,7 @@ nav {
   color: #916356;
   font-weight: bold;
   background-color: transparent;
-  border: 1px solid  #916356;
+  border: 1px solid  transparent;
   padding: 5px 20px;
   cursor: pointer;
 }
